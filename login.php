@@ -8,7 +8,7 @@
         if ( userLogin() == true ){
             session_start();
             $_SESSION['userName'] = $_POST['username'];
-            header("Location: http://localhost/main-page.php", TRUE, 301);
+            header("Location: main-page.php", TRUE, 301);
             exit();
         }else{
             //nullifies the session
